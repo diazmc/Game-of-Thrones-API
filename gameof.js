@@ -6,7 +6,8 @@ $(document).ready(function(){
             starkinfo += "<h2>Name: </h2>" + res.name
             starkinfo += "<h2>Words: </h2>" +res.words
             starkinfo += "<h2>Titles: </h2>" +res.titles
-         $('#housedetails').empty().append(starkinfo)
+            console.log(res)
+            $('#housedetails').empty().append(starkinfo)
          }, 'json')
     });
 
@@ -38,6 +39,10 @@ $(document).ready(function(){
             targaryeninfo += "<h2>Titles: </h2>" +res.titles
             $('#housedetails').empty().append(targaryeninfo)
         }, 'json')
+    })
+
+    $("#clear-house-details").click(function(){
+        $('#housedetails').empty()
     })
 
 });
