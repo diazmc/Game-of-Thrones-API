@@ -10,6 +10,11 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#description {
+    text-align: left;
+    margin-left: 20px;
+}
+
 #housepics {
     display: block;
     text-align: center;
@@ -27,10 +32,10 @@ body {
 fieldset {
     /* margin: auto; */
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     float: right;
     width: 500px;
     height: 300px;
+    background-color: black;
 }
 legend {
     font-weight: bold;
